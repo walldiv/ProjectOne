@@ -1,0 +1,55 @@
+INSERT INTO public.players ("name",phone,emergencyphone,phonecarrier,allowsms,parent,age,"position",team,userid) VALUES 
+('Davy Crocket','6161452361','6161452361','Virgin',false,'Frontier King',15,'none','none',9)
+,('Esmail','8724756253','8768529764','Sprint',NULL,'Fahed Ali',14,'none','none',59)
+,('Ahmed','2324756253','3768529756','GoogleFi',NULL,'Neil',14,'none','none',57)
+,('Berry Wallard','2358274659','3847562548','Verizon',false,'John',14,'none','none',42)
+,('David','6161452361','6161452361','Virgin',false,'Parent',15,'none','none',18)
+,('Johnny Q','123456789','2311234567','TMobile',true,'Abby',5,'none','none',45)
+,('Maxwell','3189341073','5876710939','Cingular',NULL,'Freddrick',15,'none','none',55)
+,('Carter','3724756253','8468529790','GoogleFi',NULL,'Gregory',14,'none','none',50)
+,('Erik','2269015951','5804904872','TMobile',NULL,'Evangelina',14,'none','none',56)
+,('bucky','6161234567','6167654312','Cingular',false,'Parent',14,'none','none',13)
+;
+INSERT INTO public.players ("name",phone,emergencyphone,phonecarrier,allowsms,parent,age,"position",team,userid) VALUES 
+('Chucky Barnes','6161234567','6167654312','Cingular',false,'Knoble Barnes',14,'none','none',6)
+,('Bat Man','6169876543','6169876543','Verizon',false,'Robin',14,'none','none',11)
+,('Nathan','6167891234','6167891234','Sprint',false,'Parent',14,'none','none',15)
+,('Robert','9024756253','9268529789','Virgin',NULL,'Thomas Holder',14,'none','none',52)
+,('Jimmy','6161452361','6161452361','Virgin',false,'Parent',15,'none','none',14)
+,('Sam','6169876543','6169876543','Verizon',false,'Parent',14,'none','none',16)
+,('David','2124756253','3468529745','Sprint',NULL,'Denise WIllmore',14,'none','none',18)
+,('Billy Conner','3745863726','4857263455','TMobile',true,'Roger',15,'none','none',60)
+,('Larry','4524756253','9268529733','Virgin',NULL,'Kevin Samson',14,'none','none',36)
+,('Tommy Lee','6167891234','6167891234','Sprint',false,'Geddy Lee',14,'none','none',10)
+;
+INSERT INTO public.players ("name",phone,emergencyphone,phonecarrier,allowsms,parent,age,"position",team,userid) VALUES 
+('Authur','9269015951','6504904834','TMobile',NULL,'Samantha ',14,'none','none',51)
+,('William','6167891234','6167891234','Sprint',false,'Parent',14,'none','none',19)
+,('Donald','6789341073','4476710939','Cingular',NULL,'X Æ A-12',15,'none','none',54)
+,('Tony','6161234567','6167654312','Cingular',false,'Parent',14,'none','none',17)
+,('Biggie Smalls','4424756253','8768529374','Cingular',NULL,'James Jones',15,'none','none',46)
+,('Perry','6161234567','6167654312','Cingular',false,'Parent',14,'none','none',25)
+,('Robert Smith','5624756253','7568529764','GoogleFi',NULL,'Ronald Smith',14,'none','none',48)
+,('Fredrick Donelly','7475293847','4958273472','TMobile',true,'Jane',14,'none','none',60)
+,('Derrik','6161452361','6161452361','Virgin',false,'Parent',15,'none','none',30)
+,('Ken','6167891234','6167891234','Sprint',false,'Parent',14,'none','none',35)
+;
+INSERT INTO public.players ("name",phone,emergencyphone,phonecarrier,allowsms,parent,age,"position",team,userid) VALUES 
+('Dwayne','6161234567','6167654312','Cingular',false,'Parent',14,'none','none',21)
+,('Allen','6167891234','6167891234','Sprint',false,'Parent',14,'none','none',27)
+,('Henry','6161452361','6161452361','Virgin',false,'Parent',15,'none','none',34)
+,('Oscar','6169876543','6169876543','Verizon',false,'Parent',14,'none','none',24)
+,('Jermain','2384756253','3845529374','Verizon',NULL,'Shantell',15,'none','none',43)
+,('Francis','6169876543','6169876543','Verizon',false,'Parent',14,'none','none',32)
+,('Dallas','6161452361','6161452361','Virgin',false,'Parent',15,'none','none',22)
+,('Emanuel','6167891234','6167891234','Sprint',false,'Parent',14,'none','none',31)
+,('Brett','6169876543','6169876543','Verizon',false,'Parent',14,'none','none',28)
+,('Larry','6169876543','6169876543','Verizon',false,'Parent',14,'none','none',36)
+;
+INSERT INTO public.players ("name",phone,emergencyphone,phonecarrier,allowsms,parent,age,"position",team,userid) VALUES 
+('Guy','6161234567','6167654312','Cingular',false,'Parent',14,'none','none',33)
+,('Mike','6167891234','6167891234','Sprint',false,'Parent',14,'none','none',23)
+,('Cedric','6161234567','6167654312','Cingular',false,'Parent',14,'none','none',29)
+,('Jerry','6169876543','6169876543','Verizon',false,'Parent',14,'none','none',20)
+,('James','6161452361','6161452361','Virgin',false,'Parent',15,'none','none',26)
+;

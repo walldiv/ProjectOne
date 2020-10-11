@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--#include virtual="Header.html" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Coach Assistant - ADD GAME SCORE TOOL</title>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our stylesheet last to trump above CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h1>COACH - ADD GAME SCORE FOR YOUR TEAM</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h5>SELECT DAY FROM SCHEDULE:</h5>
+        </div>
+        <div class="d-flex justify-content-center table-wrapper-scroll-y my-custom-scrollbar">
+          <table id="schedulesTable" class="table table-dark table-striped"></table>
+        </div>
+      </div>
+    </main>
+
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+
+    <!-- THIS IS JSCRIPT WHERE CODE SHOULD BEGIN -->
+    <script>
+      function alertScheduleClicked(data) {
+        alert(data);
+      }
+
+      function updateScheduleTable(response) {
+        var myArr = JSON.parse(response);
+        let t = "";
+        for (var i = 0; i < myArr.schedules.length; i++) {
+          var tr = "<tr>";
+          tr +=
+            "<td class='portalButton'><div class='d-flex flex-row'><form method='POST' action='forfeitgame'><input type='hidden' name='schedulePassed' value='" +
+            // myArr.schedules[i] +
+            i +
+            "'>" +
+            "<button type='submit' class='scoreButton btn-block'><div class='d-inline-flex p-3'><h3 class='d-inline'>DATE: " +
+            myArr.schedules[i].gameDay.monthValue +
+            " / " +
+            myArr.schedules[i].gameDay.dayOfMonth +
+            " / " +
+            myArr.schedules[i].gameDay.year +
+            "</h3></div><div class='d-inline-flex p-3'><h3 class='d-inline'>" +
+            myArr.schedules[i].teamOne +
+            " VS. " +
+            myArr.schedules[i].teamTwo +
+            "</h3></div>" +
+            "</button></form></div></td>";
+          tr += "</tr>";
+          t += tr;
+        }
+        document.getElementById("schedulesTable").innerHTML += t;
+      }
+
+      function call_populateScheduleTable() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            // alert(JSON.stringify(this.response));
+            updateScheduleTable(this.response);
+          }
+        };
+        xhttp.open("GET", "forfeitgame", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send();
+      }
+
+      $(document).ready(function () {
+        call_populateScheduleTable();
+      });
+    </script>
+  </body>
+</html>

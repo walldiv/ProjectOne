@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--#include virtual="Header.html" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Coach Assistant - Home</title>
+
+    <script type="text/javascript"src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our stylesheet last to trump above CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img class="bg" src="resources/stadium.jpg" alt="" />
+    <div class="opaque50">
+      <div class="d-flex">
+        <div class="col-4 forceAlign">
+          <div class="bottomAlign">
+            <li class="dropdown inline-header">
+              <nav class="navbar navbar-dark">
+                <button
+                        class="btn-navbarIcon"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarToggleDropdown"
+                        aria-controls="navbarToggleDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span><small>SITE NAV</small>
+                </button>
+              </nav>
+              <ul class="dropdown-menu" id="navbarToggleDropdown">
+                <li><a href="index.html">HOME</a></li>
+                <li class="divider"></li>
+                <li><a href="portal">USER PORTAL</a></li>
+                <li class="divider"></li>
+                <li><a href="" onclick="popupCenter({url:'personregistration.html', title:'blah', w:800, h:600}); ">SEASON REGISTRATION</a></li>
+                <li class="divider"></li>
+                <li><a href="sponsor.html">SPONSORSHIP</a></li>
+                <li class="divider"></li>
+                <li><a href="springtraining.html">SPRING TRAINING</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+
+        <div class="col .bg-primary navbar-padding">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="inline-header">COACH ASSISTANT</h1>
+            </div>
+            <div id="contLogin" class="col align-self-center">
+              <form id="loginForm" class="form-inline" action="userlogin" method="post">
+                <div>
+                  <div class="form-row align-items-center">
+                    <label for="userName">USERNAME:</label>
+                    <input type="text" id="userName" name="userName" class="form-control-sm form-custSize-sm" />
+                  </div>
+                  <div class="form-row align-items-center">
+                    <label for="userPassword">PASSWORD:</label>
+                    <input type="password" id="userPassword" name="userPassword" class="form-control-sm form-custSize-sm" />
+                  </div>
+                  <a onclick="popupCenter({url:'userregistration.html', title:'blah', w:800, h:600}); ">NOT A USER? CLICK HERE!!</a>
+                </div>
+                <button type="submit" id="btn_Login" class="btn btn-light form-custSize-sm">LOGIN</button>
+              </form>
+            </div>
+            <div id="contLoggedIn" class="col align-self-center">
+              <!-- this is a placeholder for logged in user text-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel" data-interval="10000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block carousel-img" src="resources/slide1.jpg" alt="First slide" />
+            <div class="carousel-caption d-none d-md-block opaque50">
+              <h5 class="box_textshadow">2020 SEASON STARTS MAY 15th</h5>
+              <p class="box_textshadow">Make sure to register today!!!</p>
+            </div>
+          </div>
+          <!-- end carousel item -->
+
+          <div class="carousel-item">
+            <img class="d-block carousel-img" src="resources/slide2.jpg" alt="Second slide" />
+            <div class="carousel-caption d-none d-md-block opaque50">
+              <h5 class="box_textshadow">YOUTH SPRING TRAINING CAMP</h5>
+              <p class="box_textshadow">Signups begin March 01</p>
+            </div>
+          </div>
+          <!-- end carousel item -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+        <div id="topics" class="opaque50 cont-NewsItems">
+          <h3>WELCOME TO COACH ASSISTANT</h3>
+          <p>Your portal to everything there is for coaches, players and parents regarding your towns Little League sports</p>
+            <div id="news" class="d-flex">
+                <div class="col">
+                  <button class="newsItem" onclick="location.href='seasonregistration.html'" type="button">
+                  <h6>2020 REGISTRATION DEADLINE</h6>
+                  <small>Registration ends March 01, be sure to register before the deadline. NO LATE REGISTRATION</small>
+                </div>
+                <div class="col">
+                  <button class="newsItem" onclick="location.href='sponsers.html'" type="button">
+                  <h6>SPONSORS LOOKING FOR TEAMS!</h6>
+                  <small>Several local business are looking to sponsor your youth today. Click here to register with a sponsor</small>
+                  </button>
+                </div>
+            </div>
+            <div id="news2" class="d-flex">
+              <div class="col">
+                <button class="newsItem" onclick="location.href='seasonregistration.html'" type="button">
+                <h6>2020 SPRING TRAINING CAMP</h6>
+                <small>Signup for Spring Training camp.  Deadline is March 21st and training starts April 15th.</small>
+              </div>
+              <div class="col">
+                <!-- <button class="newsItem" onclick="location.href='sponsers.html'" type="button">
+                <h6>SPONSORS LOOKING FOR TEAMS!</h6>
+                <small>Several local business are looking to sponsor your youth today. Click here to register with a sponsor</small>
+                </button> -->
+            </div>
+
+        </div>
+    </main>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <!-- THIS IS JSCRIPT WHERE CODE SHOULD BEGIN -->
+    <script>
+      $(".carousel").carousel();
+      const x = document.getElementById("btn_Login");
+      let thisForm = document.getElementById("loginForm");
+      let fd = new FormData(thisForm);
+
+      x.addEventListener("click", function (e) {
+        e.preventDefault();
+        const uname = document.getElementById("userName").value;
+        const upass = document.getElementById("userPassword").value;
+        let params = "userName=" + uname + "&userPassword=" + upass;
+        loginUser(params, false);
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+
+>
+java:S1148$"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+>
+java:S1148'"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+>
+java:S1148?"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Z
+java:S2147&"DCombine this catch with the one at line 35, which has the same body.(ï­£Ä
+M	java:S106%"9Replace this use of System.out or System.err by a logger.(ŸéÒ
+M	java:S106("9Replace this use of System.out or System.err by a logger.(ŸéÒ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(ÓÔþŽ
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(†ÁðŸ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(¥µûäùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(·Í‰©
+Q	java:S125"<This block of commented-out lines of code should be removed.(üú«Þ

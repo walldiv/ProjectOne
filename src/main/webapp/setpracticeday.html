@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--#include virtual="Header.html" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Coach Assistant - SET PRACTICE DAY TOOL</title>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our stylesheet last to trump above CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h1>COACH - SET PRACTICE DAY FOR YOUR TEAM</h1>
+        </div>
+        <form action="setpracticeday" method="POST" class="form-group">
+          <div class="d-flex justify-content-center">
+            <h5>PRACTICE DAY OF WEEK:</h5>
+            <input type="date" class="form-control" id="startDay" name="practiceDay" value="" min="2020-04-01" max="2020-05-31" />
+          </div>
+          <h5 class="pr-3">TIME:</h5>
+          <input type="time" class="form-control" name="practiceTime" min="17:00" max="20:00" required />
+          <div class="d-flex justify-content-center pt-3">
+            <button type="submit" class="btn btn-secondary" onClick="javascript:window.close('','_parent','');">SET DAY</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+
+    <!-- THIS IS JSCRIPT WHERE CODE SHOULD BEGIN -->
+    <script></script>
+  </body>
+</html>

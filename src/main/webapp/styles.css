@@ -1,0 +1,183 @@
+body {
+  background-color: #151515;
+  color: white;
+}
+main {
+  margin: 30px 0;
+}
+small {
+  color: white;
+}
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+}
+
+input,
+label {
+  font-size: x-small;
+  margin: 0 10px;
+}
+.form-custSize-sm {
+  font-size: 0.5rem;
+}
+.inline-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0 10px;
+}
+a:hover {
+  text-decoration: none;
+  color: orangered;
+}
+.navbar-toggler-icon {
+  background-size: 50%;
+}
+.btn-navbarIcon {
+  border: none;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+}
+.btn-navbarIcon:focus {
+  outline: none;
+}
+
+.dropdown-menu {
+  background-color: rgb(22, 22, 22);
+}
+/* TEMPORARY - for the header */
+iframe {
+  position: relative;
+  height: auto;
+  width: 100%;
+  border-style: none;
+}
+
+.carousel-img {
+  width: 60% !important;
+  margin: auto;
+}
+.carousel-caption {
+  right: 25%;
+  left: 25%;
+}
+
+
+.opaque50 {
+  opacity: 0.7;
+  background-color: black;
+}
+.box_textshadow {
+  text-shadow: 2px 2px 0px rgb(0, 0, 0); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+.navbar-padding {
+  padding: 30px 0;
+}
+.cont-NewsItems {
+  /* margin: 30px 50px; */
+  width: 70%;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.cust-table {
+  color: white;
+  padding: 0 10px;
+}
+
+.newsHeading {
+  text-decoration: underline;
+}
+
+.newsItem {
+  margin: 10px 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.newsItem:hover {
+  background-color: orangered;
+}
+
+.forceAlign {
+  position: relative;
+}
+.bottomAlign {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.divided {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  margin: 5px
+}
+
+.img_sm {
+  width: 5em;
+  height:auto;
+}
+
+.portalButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.portalButton:hover {
+  width: 105%;
+  height: 105%;
+  background-color: orangered;
+}
+
+.scoreButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}

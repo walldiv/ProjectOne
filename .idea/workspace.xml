@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ede37106-d2f6-4be7-b7ad-6833aca9413c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="E:\VSProjs\REVATURE\2004-apr06-java\ProjectOne" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bBJX0J1Luig9I4QDe7QtQopc75" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjectTwo/GeoCache" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.SonarLint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\VSProjs\REVATURE\2004-apr06-java\ProjectOne\src\main\webapp\scripts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.ProjectOne [tomcat:run]">
+    <configuration name="AdminTests.blah" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectOne" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AdminTests" />
+      <option name="METHOD_NAME" value="blah" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminTests.resetSeason" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectOne" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AdminTests" />
+      <option name="METHOD_NAME" value="resetSeason" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminTests.startSeason" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectOne" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AdminTests" />
+      <option name="METHOD_NAME" value="startSeason" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in ProjectOne (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectOne" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in ProjectOne (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectOne" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectOne [tomcat:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in ProjectOne (2)" />
+        <item itemvalue="JUnit.All in ProjectOne (1)" />
+        <item itemvalue="JUnit.AdminTests.resetSeason" />
+        <item itemvalue="JUnit.AdminTests.startSeason" />
+        <item itemvalue="JUnit.AdminTests.blah" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ede37106-d2f6-4be7-b7ad-6833aca9413c" name="Default Changelist" comment="" />
+      <created>1588099588859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588099588859</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2646" y="211" key="#Auto_Import" timestamp="1588368016432">
+      <screen x="1920" y="-13" width="1920" height="1040" />
+    </state>
+    <state x="2646" y="211" key="#Auto_Import/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588368016432" />
+    <state x="2360" y="81" key="#Project_Structure" timestamp="1589244095189">
+      <screen x="1920" y="-13" width="1920" height="1040" />
+    </state>
+    <state x="2360" y="81" key="#Project_Structure/0.0.1920.1040/1920.-13.1920.1040@1920.-13.1920.1040" timestamp="1589244095189" />
+    <state x="447" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588108005865">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="447" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588108005865" />
+    <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588274121391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588274121391" />
+    <state x="765" y="226" width="632" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1588871160437">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" width="632" height="587" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588871160437" />
+    <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1588216977533">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588216977533" />
+    <state x="743" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588301622739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588301622739" />
+    <state x="569" y="87" key="CommitChangelistDialog2" timestamp="1588127783281">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="569" y="87" key="CommitChangelistDialog2/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588127783281" />
+    <state x="113" y="137" width="1736" height="856" key="DiffContextDialog" timestamp="1588914976650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="113" y="137" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588914976650" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589895962054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1589895962054" />
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1588952498556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588952498556" />
+    <state width="1877" height="268" key="GridCell.Tab.0.center" timestamp="1588952498556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588952498556" />
+    <state width="1877" height="268" key="GridCell.Tab.0.left" timestamp="1588952498556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588952498556" />
+    <state width="1877" height="268" key="GridCell.Tab.0.right" timestamp="1588952498556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588952498556" />
+    <state x="719" y="240" key="RollbackChangesDialog" timestamp="1588435557060">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="240" key="RollbackChangesDialog/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588435557060" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1588888127974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588888127974" />
+    <state x="521" y="117" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588811341310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="521" y="117" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588811341310" />
+    <state x="1920" y="-13" width="1425" height="1027" maximized="true" key="dock-window-1" timestamp="1588885325930">
+      <screen x="1920" y="-13" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="-13" width="1425" height="1027" maximized="true" key="dock-window-1/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588885325930" />
+    <state x="1981" y="-32" width="1266" height="640" maximized="true" key="dock-window-2" timestamp="1588883822411">
+      <screen x="1920" y="-13" width="1920" height="1040" />
+    </state>
+    <state x="1981" y="-32" width="1266" height="640" maximized="true" key="dock-window-2/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588883822411" />
+    <state x="1920" y="-13" width="981" height="1027" maximized="true" key="dock-window-3" timestamp="1588648741438">
+      <screen x="1920" y="-13" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="-13" width="981" height="1027" maximized="true" key="dock-window-3/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588648741438" />
+    <state x="307" y="64" width="1515" height="860" key="find.popup" timestamp="1589389317599">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="307" y="64" width="1515" height="860" key="find.popup/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1589389317599" />
+    <state x="342" y="181" key="new project wizard" timestamp="1588975693871">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="181" key="new project wizard/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588975693871" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588617221889">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1588617221889" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProjectOne$All_in_ProjectOne__1_.ic" NAME="All in ProjectOne (1) Coverage Results" MODIFIED="1588951010580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ProjectOne$All_in_ProjectOne__2_.ic" NAME="All in ProjectOne (2) Coverage Results" MODIFIED="1588952174098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ProjectOne$All_in_ProjectOne.ic" NAME="All in ProjectOne Coverage Results" MODIFIED="1588883888924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

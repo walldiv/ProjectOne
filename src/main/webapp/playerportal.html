@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--#include virtual="Header.html" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Coach Assistant - Admin Portal</title>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our stylesheet last to trump above CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img class="bg" src="resources/stadium.jpg" alt="" />
+    <div class="opaque50">
+      <div class="d-flex">
+        <div class="col-4 forceAlign">
+          <div class="bottomAlign">
+            <li class="dropdown inline-header">
+              <nav class="navbar navbar-dark">
+                <button
+                  class="btn-navbarIcon"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleDropdown"
+                  aria-controls="navbarToggleDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span><small>SITE NAV</small>
+                </button>
+              </nav>
+              <ul class="dropdown-menu" id="navbarToggleDropdown">
+                <li><a href="index.html">HOME</a></li>
+                <li class="divider"></li>
+                <li><a href="portal">USER PORTAL</a></li>
+                <li class="divider"></li>
+                <li><a href="personregistration.html">SEASON REGISTRATION</a></li>
+                <li class="divider"></li>
+                <li><a href="sponsor.html">SPONSORSHIP</a></li>
+                <li class="divider"></li>
+                <li><a href="springtraining.html">SPRING TRAINING</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+
+        <div class="col .bg-primary navbar-padding">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="inline-header">COACH ASSISTANT</h1>
+            </div>
+            <div id="contLogin" class="col align-self-center">
+              <form id="loginForm" class="form-inline" action="userlogin" method="post">
+                <div>
+                  <div class="form-row align-items-center">
+                    <label for="userName">USERNAME:</label>
+                    <input type="text" id="userName" name="userName" class="form-control-sm form-custSize-sm" />
+                  </div>
+                  <div class="form-row align-items-center">
+                    <label for="userPassword">PASSWORD:</label>
+                    <input type="password" id="userPassword" name="userPassword" class="form-control-sm form-custSize-sm" />
+                  </div>
+                  <a href="userregistration.html">NOT A USER? CLICK HERE!!</a>
+                </div>
+                <button type="submit" id="btn_Login" class="btn btn-light form-custSize-sm">LOGIN</button>
+              </form>
+            </div>
+            <div id="contLoggedIn" class="col align-self-center">
+              <!-- this is a placeholder for logged in user text-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

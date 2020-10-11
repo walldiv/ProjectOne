@@ -1,0 +1,19 @@
+
+R
+java:S1128"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼
+>
+java:S1148-"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+K
+java:S1128	"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(åö¨
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(Ÿª‡Û
+S	java:S106"9Replace this use of System.out or System.err by a logger.(–­Èÿøÿÿÿÿ
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(æó‹¾
+F
+java:S1128"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(”ñ“–
+N	java:S106"9Replace this use of System.out or System.err by a logger.(”ñ“–

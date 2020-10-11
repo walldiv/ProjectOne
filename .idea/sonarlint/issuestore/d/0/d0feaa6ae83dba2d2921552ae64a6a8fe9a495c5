@@ -1,0 +1,14 @@
+
+I
+java:S1121M".Extract the assignment out of this expression.(£Æşÿÿÿÿ
+R
+java:S1128"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼
+>
+java:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(üÉ¿Šüÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(®²›µ
+D
+java:S1121K".Extract the assignment out of this expression.(ÏÛ¼
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(´ìŸãıÿÿÿÿ
+>
+java:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

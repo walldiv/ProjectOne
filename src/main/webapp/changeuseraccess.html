@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--#include virtual="Header.html" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Coach Assistant - CHANGE USER ACCESS TOOL</title>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our stylesheet last to trump above CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h1>PASSWORD RESET UTILITY</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for names.." />
+        </div>
+        <form action="changeuseraccess" method="POST">
+          <div class="d-flex justify-content-center table-wrapper-scroll-y my-custom-scrollbar">
+            <table id="usersTable" class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <td>[]</td>
+                  <td>USERNAME:</td>
+                  <td>EMAIL:</td>
+                  <td>ACCESS LEVEL:</td>
+                </tr>
+              </thead>
+              <tbody id="tableCont"></tbody>
+            </table>
+          </div>
+          <div class="d-flex justify-content-center pt-3">
+            <h5 class="pr-3">SET SELECTED USER ACCOUNTS TO:</h5>
+            <select id="userAccessGlobal" name="userAccessGlobal">
+              <option value="coach">COACH</option>
+              <option value="player">PLAYER</option>
+              <option value="user">USER</option>
+            </select>
+          </div>
+          <div class="d-flex justify-content-center pt-3">
+            <button type="submit" class="btn btn-secondary" onClick="javascript:window.close('','_parent','');">CHANGE ACCESS</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+
+    <!-- THIS IS JSCRIPT WHERE CODE SHOULD BEGIN -->
+    <script>
+      function filterTable() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("usersTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[1];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+
+      function updateUserTable(response) {
+        var myArr = JSON.parse(response);
+        let t = "";
+        for (var i = 0; i < myArr.length; i++) {
+          var tr = "<tr>";
+          tr += "<td><input type='checkbox' name='userChecked' value=" + myArr[i].id + "></td><td>" + myArr[i].username + "</td><td>" + myArr[i].email + "</td>";
+          tr += "<td>" + myArr[i].useraccess + "</td>";
+          tr += "</tr>";
+          t += tr;
+        }
+        document.getElementById("tableCont").innerHTML += t;
+      }
+
+      function call_populateUserTable() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            updateUserTable(this.response);
+          }
+        };
+        xhttp.open("GET", "changeuseraccess", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send();
+      }
+
+      $(document).ready(function () {
+        call_populateUserTable();
+      });
+    </script>
+  </body>
+</html>

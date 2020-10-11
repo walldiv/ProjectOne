@@ -1,0 +1,6 @@
+This page is setup to use a drop-down value list to choose either a COACH or PLAYER to create a new user registration.
+
+When a person visits this page from the web - only certain information is shown at first, and an entire <div> is set to hidden via bootstraps collapse class.
+
+GOAL:
+When a user selects PLAYER from the drop down list - javascript should expand the collapsable div (id="form_PlayerInputs").  Likewise when COACH is selected - it should retract it.

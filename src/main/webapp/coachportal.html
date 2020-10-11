@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--#include virtual="Header.html" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Coach Assistant - Coach Portal</title>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our stylesheet last to trump above CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img class="bg" src="resources/stadium.jpg" alt="" />
+    <div class="opaque50">
+      <div class="d-flex">
+        <div class="col-4 forceAlign">
+          <div class="bottomAlign">
+            <li class="dropdown inline-header">
+              <nav class="navbar navbar-dark">
+                <button
+                  class="btn-navbarIcon"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleDropdown"
+                  aria-controls="navbarToggleDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span><small>SITE NAV</small>
+                </button>
+              </nav>
+              <ul class="dropdown-menu" id="navbarToggleDropdown">
+                <li><a href="index.html">HOME</a></li>
+                <li class="divider"></li>
+                <li><a href="portal">USER PORTAL</a></li>
+                <li class="divider"></li>
+                <li><a href="" onclick="popupCenter({url:'personregistration.html', title:'blah', w:800, h:600}); ">SEASON REGISTRATION</a></li>
+                <li class="divider"></li>
+                <li><a href="sponsor.html">SPONSORSHIP</a></li>
+                <li class="divider"></li>
+                <li><a href="springtraining.html">SPRING TRAINING</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+
+        <div class="col .bg-primary navbar-padding">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="inline-header">COACH ASSISTANT</h1>
+            </div>
+            <div id="contLogin" class="col align-self-center">
+              <form id="loginForm" class="form-inline" action="userlogin" method="post">
+                <div>
+                  <div class="form-row align-items-center">
+                    <label for="userName">USERNAME:</label>
+                    <input type="text" id="userName" name="userName" class="form-control-sm form-custSize-sm" />
+                  </div>
+                  <div class="form-row align-items-center">
+                    <label for="userPassword">PASSWORD:</label>
+                    <input type="password" id="userPassword" name="userPassword" class="form-control-sm form-custSize-sm" />
+                  </div>
+                  <a href="userregistration.html">NOT A USER? CLICK HERE!!</a>
+                </div>
+                <button type="submit" id="btn_Login" class="btn btn-light form-custSize-sm">LOGIN</button>
+              </form>
+            </div>
+            <div id="contLoggedIn" class="col align-self-center">
+              <!-- this is a placeholder for logged in user text-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container bg-dark pt-3 pb-3">
+        <div class="d-flex justify-content-center">
+          <h1>COACH PORTAL</h1>
+        </div>
+
+        <div class="pt-1 pb-1 pl-5 divider">
+          TEAM ACTIONS
+        </div>
+        <div class="d-flex flex-row">
+          <div class="pl-3 pr-3">
+            <button class="portalButton" onclick="popupCenter({url:'renameteam.html', title:'blah', w:800, h:600}); ">
+              <div>
+                <img class="img_sm" src="resources/icon_Password.png" />
+              </div>
+              <div>
+                RENAME TEAM
+              </div>
+            </button>
+          </div>
+          <div class="pl-3 pr-3">
+            <button class="portalButton" onclick="popupCenter({url:'setpracticeday.html', title:'blah', w:800, h:600}); ">
+              <div>
+                <img class="img_sm" src="resources/icon_ChangeUAC.png" />
+              </div>
+              <div>
+                SET PRACTICE DAY
+              </div>
+          </div>
+        </div>
+        <div class="pt-5 pb-1 pl-5 divider">
+          GAME ACTIONS
+        </div>
+        <div class="d-flex flex-row">
+          <div class="pl-3 pr-3">
+            <button class="portalButton" onclick="popupCenter({url:'addgamescore.html', title:'blah', w:800, h:600}); ">
+              <div>
+                <img class="img_sm" src="resources/icon_StartSeason.png" />
+              </div>
+              <div>
+                ADD GAME SCORE
+              </div>
+            </button>
+          </div>
+
+          <div class="pl-3 pr-3">
+            <button class="portalButton" onclick="popupCenter({url:'forfeitgame.html', title:'blah', w:800, h:600}); ">
+              <div>
+                <img class="img_sm" src="resources/icon_StartSeason.png" />
+              </div>
+              <div>
+                FORFEIT GAME
+              </div>
+            </button>
+          </div>
+        </div>
+          <div class="pt-5 pb-1 pl-5 divider">
+            PLAYER ACTIONS
+          </div>
+          <div class="d-flex flex-row">
+            <div class="pl-3 pr-3">
+              <button class="portalButton" onclick="popupCenter({url:'#', title:'blah', w:800, h:600}); ">
+                <div>
+                  <img class="img_sm" src="resources/icon_StartSeason.png" />
+                </div>
+                <div>
+                  CHANGE PLAYER POSITION
+                </div>
+              </button>
+            </div>
+  
+            <div class="pl-3 pr-3">
+              <button class="portalButton" onclick="popupCenter({url:'#', title:'blah', w:800, h:600}); ">
+                <div>
+                  <img class="img_sm" src="resources/icon_StartSeason.png" />
+                </div>
+                <div>
+                  RECRUIT PLAYER
+                </div>
+              </button>
+            </div>
+
+            <div class="pl-3 pr-3">
+              <button class="portalButton" onclick="popupCenter({url:'#', title:'blah', w:800, h:600}); ">
+                <div>
+                  <img class="img_sm" src="resources/icon_StartSeason.png" />
+                </div>
+                <div>
+                  REMOVE PLAYER
+                </div>
+              </button>
+            </div>
+  
+      </div>
+    </main>
+
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+
+    <!-- THIS IS JSCRIPT WHERE CODE SHOULD BEGIN -->
+    <script>
+      function disableButtons(response) {
+
+      }
+      function callUserAccessLevel() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            updateLoginForm(this.response);
+            var myArr = JSON.parse(response);
+            alert(myArr);
+          }
+        };
+        xhttp.open("POST", "portal", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send();
+      }
+
+      $(document).ready(function () {
+        callUserAccessLevel();
+      });
+    </script>
+  </body>
+</html>

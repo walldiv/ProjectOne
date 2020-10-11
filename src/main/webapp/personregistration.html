@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coach Assistant - Season Registration</title>
+    
+    <script type="text/javascript"src="scripts/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <header>
+      <div class="container, text-center">
+        <h1>LITTLE LEAGUE</h1>
+        <div class="container">
+            <form method="POST" action="personregistration" id="registrationForm" class="form">
+                <fieldset class="border p-2">
+                    <legend class="w-auto">SEASON REGISTRATION</legend>
+                    <h5 class="d-inline">User Type:</h5>
+                   <!-- <input list="userTypes">-->
+                    <select id="userTypesSelect" name="userTypes">
+                        <option value="coach">Coach</option>
+                        <option value="player">Player</option>
+                    </select>
+                    <!-- This is the normal input for any user -->
+                    <div id="form_NormalInputs" class="form-group">
+                        <div class="form-group-row">
+                            <div class="col">
+                                <label for="firstName" class="col-form-label">First Name:</label>
+                                <input type="text" name="firstName" required>
+                                <label for="lastName" class="col-form-label">Last Name:</label>
+                                <input type="text" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="col">
+                                <label for="phoneNumber" class="col-form-label">Contact Number:</label>
+                                <input type="text" name="phoneNumber" required>
+                                <label for="emergencyContact" class="col-form-label">Emergency Contact:</label>
+                                <input type="text" name="emergencyContact" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-row">
+                            <div class="col">
+                                <h5 class="d-inline">Cell Carrier:</h5>
+                                <select name="cellCarriers">
+                                    <option value="TMobile">TMobile</option>
+                                    <option value="Virgin">Virgin</option>
+                                    <option value="Cingular">Cingular</option>
+                                    <option value="Sprint">Sprint</option>
+                                    <option value="Verizon">Verizon</option>
+                                    <option value="GoogleFi">GoogleFi</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input class="form-check-input" type="checkbox" name="allowTxtMsg" value="true" checked>
+                                <label class="form-check-label" for="allowTxtMsg">Allow SMS Text Messages</label>
+                            </div>                            
+                    </div>
+                    <br>
+                    <!-- this is the input for any player to have parents information -->
+                    <div id="form_PlayerInputs" class="form-group collapse">
+                        <p>------------- FOR PLAYERS ONLY -------------</p>
+                        <div class="form-group-row ">
+                            <label for="parentName" class="col-form-label">Parent Name:</label>
+                            <input type="text" name="parentName">
+                        </div>
+                        <div class="form-group-row">
+                            <label for="playerAge" class="col-form-label">Players Age:</label>
+                            <input type="number" name="playerAge">
+                        </div>
+                    </div>
+                    
+                    <!-- submit/cancel buttons -->
+                    <div class="form-group-row">
+                        <button type="submit" id="submitButton" class="btn btn-outline-primary">SUBMIT</button>
+                        <button id="btn_CancelRegister" class="btn btn-outline-primary" onClick="javascript:window.close('','_parent','');">CANCEL</button>
+                    </div>
+            
+                </fieldset>
+            </form>
+            
+        </div>
+      </div>
+    </header>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- These are required for bootstrap JS/CSS dependencies-->
+    <!-- THIS IS JSCRIPT WHERE CODE SHOULD BEGIN -->
+    <script>
+    //This overrides the form submit - allowing for javascript to handle the submission and close window on response success
+    // document.getElementById("submitButton").addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     let formData = new FormData(document.getElementById("registrationForm"));
+    //     for (let value of formData.values()) {
+    //         console.log(value); 
+    //     }
+    //     let xhttp = new XMLHttpRequest();
+    //     xhttp.onreadystatechange = function () {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //         alert(this.response);
+    //         closeWindow();
+    //     }
+    //     };
+    //     xhttp.open("POST", "personregistration", true);
+    //     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //     xhttp.send(formData);
+    // });
+
+
+    //this will show the player-only content when choice = player
+    document.getElementById("userTypesSelect").addEventListener("change", function(e){
+        // alert(this.value);
+        if(this.value == "player") {
+            document.getElementById("form_PlayerInputs").setAttribute("class", "form-group");
+        }
+        else {
+            document.getElementById("form_PlayerInputs").setAttribute("class", "form-group collapse");
+        }
+    });
+
+    //this gets the login state and alerts/closes window if not properly logged into the system
+    function call_GetLoginState() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 400) {
+                alert(this.response);
+                closeWindow();
+            }
+        };
+        xhttp.open("GET", "personregistration", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send();
+      }
+
+      $(document).ready(function () {
+        call_GetLoginState();
+      });
+
+    </script>
+  </body>
+</html>

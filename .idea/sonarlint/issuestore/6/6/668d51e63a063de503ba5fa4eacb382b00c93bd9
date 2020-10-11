@@ -1,0 +1,87 @@
+
+E
+java:S3740y"/Provide the parametrized type for this generic.(§ü™Ì
+`	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(‘Ô…Íüÿÿÿÿ
+[	java:S1128"FDefine and throw a dedicated exception instead of using a generic one.(¥œÀ
+a	java:S112¥"FDefine and throw a dedicated exception instead of using a generic one.(ïå¾Ìıÿÿÿÿ
+a	java:S112°"FDefine and throw a dedicated exception instead of using a generic one.(„ÏÒ˜üÿÿÿÿ
+\	java:S112»"FDefine and throw a dedicated exception instead of using a generic one.(œ“Ş
+\	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(ìî¢
+s	java:S127×"XRefactor the code in order to not assign to this loop counter from within the loop body.(éÛÃæşÿÿÿÿ
+o	java:S135Í"YReduce the total number of break and continue statements in this loop to use at most one.(’Ù°Œ
+t	java:S135ò"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+>
+java:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S11482"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S1148O"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S1148["#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?
+java:S1148ª"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?
+java:S1148µ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?
+java:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+K
+java:S1143("5Remove this return statement from this finally block.(·ƒç›
+N
+java:S1854š"7Remove this useless assignment to local variable "tmp".(üÔêÅ
+h
+java:S3776E"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÃÉğ½
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(ÛßºÓ
+l
+java:S3457a"Q%n should be used in place of \n to produce the platform-specific line separator.(÷–ÿÿÿÿÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(÷–ÿÿÿÿÿ
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(‘ı‚á
+S
+java:S1197c"8Move the array designator from the variable to the type.(¬Ö®àùÿÿÿÿ
+N	java:S106d"9Replace this use of System.out or System.err by a logger.(ü±¨¿
+9
+java:S2119j"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
+M	java:S106l"9Replace this use of System.out or System.err by a logger.(õ›í(
+N
+java:S1197w"8Move the array designator from the variable to the type.(°ûò¦
+M	java:S106~"9Replace this use of System.out or System.err by a logger.(±“¼{
+N	java:S106‚"9Replace this use of System.out or System.err by a logger.(ÑÜèD
+U
+java:S1854Ğ"9Remove this useless assignment to local variable "rand1".(ËüÇøÿÿÿÿ
+S
+java:S1854×"7Remove this useless assignment to local variable "itr".(éÛÃæşÿÿÿÿ
+n
+java:S3776Æ"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(•ñ³„ùÿÿÿÿ
+T
+java:S1197Æ"8Move the array designator from the variable to the type.(•ñ³„ùÿÿÿÿ
+O
+java:S1197Ç"8Move the array designator from the variable to the type.(ß®›®
+p
+java:S2293Ë"YReplace the type specification in this constructor call with the diamond operator ("<>").(Óç¢ö
+:
+java:S2119Ğ"Save and re-use this "Random".(ËüÇøÿÿÿÿ
+:
+java:S2119Ñ"Save and re-use this "Random".(¾à¢©øÿÿÿÿ
+T	java:S106á"9Replace this use of System.out or System.err by a logger.(İ¿±ìüÿÿÿÿ
+T
+java:S1197â"8Move the array designator from the variable to the type.(’İ‚ûÿÿÿÿ
+O	java:S106í"9Replace this use of System.out or System.err by a logger.(½ëêÔ
+O	java:S106ï"9Replace this use of System.out or System.err by a logger.(ÅúÂ
+:
+java:S2119ó"Save and re-use this "Random".(ËüÇøÿÿÿÿ
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(±±ºú
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(ÍîÖıÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(š¢…·şÿÿÿÿ
+F
+java:S1481Ğ"*Remove this unused "rand1" local variable.(ËüÇøÿÿÿÿ
+Q	java:S125K"<This block of commented-out lines of code should be removed.(îèÄ¢
+V	java:S125W"<This block of commented-out lines of code should be removed.(İ”§Áøÿÿÿÿ
+P	java:S125s"<This block of commented-out lines of code should be removed.(¡êÄ
+V	java:S125}"<This block of commented-out lines of code should be removed.(†û¦øÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(¤Ï¥úÿÿÿÿ
+W	java:S125’"<This block of commented-out lines of code should be removed.(¾„Éşÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.( óÿ
+R	java:S125ä"<This block of commented-out lines of code should be removed.(‰ÖÆ±
